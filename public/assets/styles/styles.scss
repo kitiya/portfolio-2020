@@ -1,0 +1,60 @@
+@import "config.scss";
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* General setup */
+body {
+  background-color: $clr-light;
+  color: $clr-dark;
+  margin: 0;
+  font-family: $ff-primary;
+  line-height: 1.6;
+  @include font-size(1.125rem);
+}
+
+section {
+  padding: 5em 2em;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Typography */
+strong {
+  font-weight: $fw-bold;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1;
+  margin: 0;
+}
+
+h1 {
+  @include font-size(5rem);
+}
+h2 {
+  @include font-size(3.75rem);
+}
+h3 {
+  @include font-size(1.5rem);
+}
+
+/* Styling the titles and subtitles*/
+
+.section__title {
+  margin-bottom: 0.25em;
+}
+
+.section__subtitle {
+  // paragraph
+  margin: 0;
+  @include font-size(1.5rem); // h3
+}

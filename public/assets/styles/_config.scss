@@ -1,18 +1,11 @@
-$primary: #fbfbfb;
-$secondary: #4f5b66; // grayish
-$highlight: #e71d36;
-$dark: #343d46;
-$light: #e1e1e1;
+@import "~rfs/scss";
 
-$link: $light;
-$activeLink: #2ec4b6;
+$ff-primary: "Source Sans Pro", sans-serif;
+$ff-secondary: "Source Code Pro", monospace;
 
-$border-color: lighten($dark, 50%);
+$fw-reg: 300;
+$fw-bold: 900;
 
-$classicBlue: #0f4c81;
-$info: #2ec4b6;
-$success: #3bae6b;
-$warning: #ff9f1c;
-
-$serif: "Roboto Condensed", serif;
-$sans-serif: "Lato", sans-serif;
+$clr-light: #fff;
+$clr-dark: #303030;
+$clr-accent: #41f2f5;

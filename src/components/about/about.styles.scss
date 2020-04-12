@@ -1,0 +1,12 @@
+@import "../../App.scss";
+
+.section__subtitle--about {
+  margin-bottom: 1em;
+  padding: 0.25em 1em;
+  background: $clr-accent;
+  font-family: $ff-secondary;
+}
+
+.image--about {
+  width: 250px;
+}

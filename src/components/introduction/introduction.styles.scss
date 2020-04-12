@@ -1,5 +1,54 @@
 @import "../../App.scss";
 
-.section__image {
-  width: 250px;
+.intro {
+  position: relative;
+}
+
+.section__title--intro {
+  font-weight: $fw-reg;
+  & strong {
+    display: block;
+  }
+}
+
+.section__subtitle--intro {
+  margin-bottom: 1em;
+  padding: 0.25em 1em;
+  background: $clr-accent;
+  font-family: $ff-secondary;
+  display: inline-block;
+}
+
+.section__image--intro {
+  @include box-shadow;
+}
+
+@include screenSizeQuery("sm") {
+  .intro {
+    display: grid;
+    width: min-content;
+    margin: 0 auto;
+    grid-column-gap: 1em;
+    grid-template-areas:
+      "img title"
+      "img subtitle";
+    grid-template-columns: min-content max-content;
+
+    .section__subtitle--intro {
+      align-self: start;
+      grid-column: -1/1;
+      grid-row: 2;
+      text-align: right;
+      position: relative;
+      left: -1.5em;
+      width: calc(100% + 1.5em);
+    }
+
+    .section__image--intro {
+      grid-area: img;
+      min-width: 280px;
+      position: relative;
+      z-index: 2;
+    }
+  }
 }

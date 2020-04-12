@@ -3,7 +3,7 @@ import "./header.styles.scss";
 
 const Header = () => {
   return (
-    <header>
+    <header className="header--navbar">
       <div className="logo">
         <img
           className="logo__img"
@@ -27,12 +27,12 @@ const Header = () => {
             </a>
           </li>
           <li className="nav__item">
-            <a href="/#" className="nav__link">
+            <a href="/#about" className="nav__link">
               About me
             </a>
           </li>
           <li className="nav__item">
-            <a href="/#" className="nav__link">
+            <a href="/#work" className="nav__link">
               My Work
             </a>
           </li>
