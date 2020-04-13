@@ -2,25 +2,25 @@
 
 .intro {
   position: relative;
-}
 
-.section__title--intro {
-  font-weight: $fw-reg;
-  & strong {
-    display: block;
+  .section__title--intro {
+    font-weight: $fw-reg;
+    & strong {
+      display: block;
+    }
   }
-}
 
-.section__subtitle--intro {
-  margin-bottom: 1em;
-  padding: 0.25em 1em;
-  background: $clr-accent;
-  font-family: $ff-secondary;
-  display: inline-block;
-}
+  .section__subtitle--intro {
+    margin-bottom: 1em;
+    padding: 0.25em 1em;
+    background: $clr-accent;
+    font-family: $ff-secondary;
+    display: inline-block;
+  }
 
-.section__image--intro {
-  @include box-shadow;
+  .section__image--intro {
+    @include box-shadow;
+  }
 }
 
 @include screenSizeQuery("sm") {
