@@ -8,7 +8,7 @@ const Introduction = () => {
         Hi, I am <strong>Kitiya S.</strong>
       </h1>
       <p className="section__subtitle section__subtitle--intro">
-        software engineer
+        Software Developer
       </p>
       <img
         className="section__image--intro"

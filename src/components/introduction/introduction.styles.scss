@@ -28,7 +28,7 @@
     display: grid;
     width: min-content;
     margin: 0 auto;
-    grid-column-gap: 1em;
+    grid-column-gap: 2em;
     grid-template-areas:
       "img title"
       "img subtitle";
@@ -41,7 +41,7 @@
       text-align: right;
       position: relative;
       left: -1.5em;
-      width: calc(100% + 1.5em);
+      width: calc(100% + 3em);
     }
 
     .section__image--intro {
@@ -49,6 +49,14 @@
       min-width: 280px;
       position: relative;
       z-index: 2;
+    }
+  }
+}
+
+@include screenSizeQuery("md") {
+  .intro {
+    .section__subtitle--intro {
+      width: calc(100% + 1.5em);
     }
   }
 }
