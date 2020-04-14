@@ -14,8 +14,10 @@ const PortfolioItem = ({ projectUrl, imageUrl }) => {
 const MyWork = () => {
   return (
     <section className="my-work" id="work">
-      <h2 className="section__title">x</h2>
-      <p className="section__subtitle">x</p>
+      <h2 className="section__title section__title--work">My Portfolio</h2>
+      <p className="section__subtitle section__subtitle--work">
+        A selection of my range of work
+      </p>
       <div className="portfolio">
         {portfolioDb.map((item, index) => {
           return (

@@ -18,18 +18,17 @@ const About = () => {
         />
         <div className="about-me__body">
           <p>
-            Cheesecake biscuit sugar plum ice cream. Candy brownie chocolate
-            cake jelly pie jelly beans liquorice. Tiramisu pie oat cake chupa
-            chups chocolate ice cream jujubes brownie. Icing soufflé jelly
-            pudding cheesecake ice cream biscuit ice cream candy canes. Gummies
-            liquorice muffin. Marzipan chocolate bar carrot cake.
+            I am a front-end developer looking for a new role in an exciting
+            company. I focus on writing accesible HTML, using modern CSS
+            practices and writing clean JavaScript. When writing JavaScript
+            code, I mostly use React, but I can adapt to whatever tools are
+            required.
           </p>
           <p>
-            Chupa chups soufflé chocolate tiramisu macaroon carrot cake. Toffee
-            lemon drops sweet roll. Icing pudding bear claw pie soufflé. Tootsie
-            roll candy canes marzipan muffin apple pie carrot cake. Sweet sesame
-            snaps sugar plum sweet roll chocolate. Candy candy tiramisu carrot
-            cake chocolate cake.
+            I am based in Toronto, Canada, but I am happy working remotely and
+            have experience in remote teams. When I am not coding, you will find
+            me outdoors. I love being out with my family and friends in nature
+            whether that is going for a walk, run or cycling.
           </p>
         </div>
       </section>
