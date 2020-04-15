@@ -12,7 +12,7 @@ const Introduction = () => {
         </Fade>
       </h1>
       <p className="section__subtitle section__subtitle--intro">
-        Software Developer
+        Software Engineer
       </p>
       <Fade>
         <img

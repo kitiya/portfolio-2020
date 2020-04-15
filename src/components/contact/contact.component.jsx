@@ -5,8 +5,11 @@ import "./contact.styles.scss";
 
 const Contact = () => {
   return (
-    <section className="contact">
-      <h3>Interested in doing a project together?</h3>
+    <section className="contact" id="contact">
+      <h2 className="section__title section__title--contact">Contact Me</h2>
+      <h3 className="section__subtitle section__subtitle--contact">
+        Interested in doing a project together?
+      </h3>
       <Fade>
         <img
           className="contact__img"
@@ -16,7 +19,7 @@ const Contact = () => {
       </Fade>
 
       <a className="btn btn--contact" href="mailto:warasint@gmail.com">
-        CONTACT ME
+        Email Me
       </a>
     </section>
   );

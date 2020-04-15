@@ -1,7 +1,25 @@
 import React from "react";
 import "./header.styles.scss";
 
+const NavItem = ({ text, url, handleClick }) => {
+  return (
+    <li className="nav__item">
+      <a href={url} className="nav__link" onClick={handleClick}>
+        {text}
+      </a>
+    </li>
+  );
+};
+
 const Header = () => {
+  const handleNavToggleClick = () => {
+    document.body.classList.toggle("nav-open");
+  };
+
+  const closeToggleMenu = () => {
+    document.body.classList.remove("nav-open");
+  };
+
   return (
     <header className="header--navbar">
       <div className="logo">
@@ -11,31 +29,32 @@ const Header = () => {
           alt=""
         />
       </div>
-      <button className="nav-toggle" aria-label="toggle navigation">
+      <button
+        className="nav-toggle"
+        aria-label="toggle navigation"
+        onClick={handleNavToggleClick}
+      >
         <span className="hamburger"></span>
       </button>
       <nav className="nav">
         <ul className="nav__list">
-          <li className="nav__item">
-            <a href="/#" className="nav__link">
-              Home
-            </a>
-          </li>
-          <li className="nav__item">
-            <a href="/#services" className="nav__link">
-              My Services
-            </a>
-          </li>
-          <li className="nav__item">
-            <a href="/#about" className="nav__link">
-              About me
-            </a>
-          </li>
-          <li className="nav__item">
-            <a href="/#work" className="nav__link">
-              My Work
-            </a>
-          </li>
+          <NavItem text="Home" url="/#" handleClick={closeToggleMenu} />
+          <NavItem
+            text="My Services"
+            url="/#services"
+            handleClick={closeToggleMenu}
+          />
+          <NavItem
+            text="About me"
+            url="/#about"
+            handleClick={closeToggleMenu}
+          />
+          <NavItem text="My Work" url="/#work" handleClick={closeToggleMenu} />
+          <NavItem
+            text="Contact"
+            url="/#contact"
+            handleClick={closeToggleMenu}
+          />
         </ul>
       </nav>
     </header>

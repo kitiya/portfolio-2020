@@ -6,7 +6,11 @@
   box-sizing: border-box;
 }
 
-/* General setup */
+/* General styles */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: $clr-light;
   color: $clr-dark;
