@@ -5,7 +5,7 @@ import "./my-work.styles.scss";
 const PortfolioItem = ({ projectUrl, imageUrl }) => {
   const urlPath = `${process.env.PUBLIC_URL}/assets/img/portfolio`;
   return (
-    <a href="{projectUrl}" className="portfolio__item">
+    <a href={projectUrl} className="portfolio__item">
       <img src={`${urlPath}/${imageUrl}`} alt="" className="portfolio__img" />
     </a>
   );
@@ -22,7 +22,7 @@ const MyWork = () => {
         {portfolioDb.map((item, index) => {
           return (
             <PortfolioItem
-              key={item}
+              key={index}
               projectUrl={item.projectUrl}
               imageUrl={item.imageUrl}
             />

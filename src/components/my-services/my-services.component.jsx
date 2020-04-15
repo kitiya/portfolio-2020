@@ -6,7 +6,7 @@ import "./my-services.styles.scss";
 const MyService = ({ title, details }) => {
   return (
     <div className="service">
-      <h3>{title}</h3>
+      <h4>{title}</h4>
       <p>{details}</p>
     </div>
   );
@@ -26,11 +26,10 @@ const MyServices = () => {
             />
           ))}
         </div>
-        <Fade>
-          <a href="/#work" className="btn">
-            My Work
-          </a>
-        </Fade>
+
+        <a href="/#work" className="btn">
+          My Work
+        </a>
       </section>
     </Fade>
   );

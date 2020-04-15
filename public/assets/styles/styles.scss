@@ -16,6 +16,13 @@ body {
   @include font-size(1.125rem);
 }
 
+ul,
+li,
+a {
+  margin: 0;
+  padding: 0;
+}
+
 section {
   padding: 5em 2em;
 }
@@ -57,19 +64,27 @@ strong {
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5 {
   line-height: 1;
   margin: 0;
 }
 
 h1 {
-  @include font-size(5rem);
+  @include font-size($fs-h1);
 }
 h2 {
-  @include font-size(3.75rem);
+  @include font-size($fs-h2);
 }
 h3 {
-  @include font-size(1.5rem);
+  @include font-size($fs-h3);
+}
+h4 {
+  @include font-size($fs-h4);
+}
+h5 {
+  @include font-size($fs-h5);
 }
 
 /* Styling the titles and subtitles*/
@@ -81,5 +96,5 @@ h3 {
 .section__subtitle {
   // paragraph
   margin: 0;
-  @include font-size(1.5rem); // h3
+  @include font-size($fs-h5);
 }

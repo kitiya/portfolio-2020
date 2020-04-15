@@ -1,32 +1,23 @@
 import React from "react";
-import { contactListDB } from "./social-list-db";
-import "./contact.styles.scss";
+import Fade from "react-reveal/Fade";
 
-const SocialListItem = ({ media, mediaLink }) => {
-  return (
-    <li className="social-list__item">
-      <a className="social-list__link" href={mediaLink}>
-        {media}
-      </a>
-    </li>
-  );
-};
+import "./contact.styles.scss";
 
 const Contact = () => {
   return (
-    <section>
-      <a href="mailto:warasint@gmail.com" className="contact__link">
-        warasint@gmail.com
+    <section className="contact">
+      <h3>Interested in doing a project together?</h3>
+      <Fade>
+        <img
+          className="contact__img"
+          src={`${process.env.PUBLIC_URL}/assets/img/work_together.svg`}
+          alt="work together"
+        />
+      </Fade>
+
+      <a className="btn btn--contact" href="mailto:warasint@gmail.com">
+        CONTACT ME
       </a>
-      <ul className="social-list">
-        {contactListDB.map((item, index) => (
-          <SocialListItem
-            key={index}
-            media={item.media}
-            mediaLink={item.mediaLink}
-          />
-        ))}
-      </ul>
     </section>
   );
 };
