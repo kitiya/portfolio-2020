@@ -1,12 +1,16 @@
 import React from "react";
+import { HashLink } from "react-router-hash-link";
 import "./header.styles.scss";
 
 const NavItem = ({ text, url, handleClick }) => {
   return (
     <li className="nav__item">
-      <a href={url} className="nav__link" onClick={handleClick}>
+      <HashLink to={url} className="nav__link" onClick={handleClick}>
         {text}
-      </a>
+      </HashLink>
+      {/* <a href={url} className="nav__link" onClick={handleClick}>
+        {text}
+      </a> */}
     </li>
   );
 };
@@ -23,11 +27,13 @@ const Header = () => {
   return (
     <header className="header--navbar">
       <div className="logo">
-        <img
-          className="logo__img"
-          src={`${process.env.PUBLIC_URL}/assets/logo/kitiya.png`}
-          alt=""
-        />
+        <HashLink to="/" className="nav__link" onClick={closeToggleMenu}>
+          <img
+            className="logo__img"
+            src={`${process.env.PUBLIC_URL}/assets/logo/kitiya_logo.png`}
+            alt=""
+          />
+        </HashLink>
       </div>
       <button
         className="nav-toggle"

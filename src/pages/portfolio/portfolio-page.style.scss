@@ -1,0 +1,69 @@
+@import "../../App.scss";
+
+.portfolio_item {
+  position: relative;
+  padding: 5em 2em 3em;
+
+  .section__title--portfolio {
+    font-weight: $fw-reg;
+    & strong {
+      display: block;
+    }
+  }
+
+  .section__subtitle--portfolio {
+    margin-bottom: 1em;
+    padding: 0.25em 1em;
+    background: $clr-accent;
+    font-family: $ff-secondary;
+    display: inline-block;
+  }
+
+  .section__image--portfolio {
+    @include box-shadow;
+  }
+}
+
+.portfolio-item-content {
+  padding: 0 2em 2em;
+  max-width: 1200px;
+  margin: 0 auto;
+  @include font-size($fs-h6);
+}
+@include screenSizeQuery("sm") {
+  .portfolio_item {
+    display: grid;
+    width: min-content;
+    margin: 0 auto;
+    grid-column-gap: 2em;
+    grid-template-areas:
+      "img title"
+      "img subtitle";
+    grid-template-columns: min-content max-content;
+
+    .section__subtitle--portfolio {
+      align-self: start;
+      grid-column: -1/1;
+      grid-row: 2;
+      text-align: right;
+      position: relative;
+      left: -1.5em;
+      width: calc(100% + 3em);
+    }
+
+    .section__image--portfolio {
+      grid-area: img;
+      min-width: 280px;
+      position: relative;
+      z-index: 2;
+    }
+  }
+}
+
+@include screenSizeQuery("md") {
+  .portfolio_item {
+    .section__subtitle--portfolio {
+      width: calc(100% + 1.5em);
+    }
+  }
+}

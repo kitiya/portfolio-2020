@@ -1,65 +1,73 @@
 @import "../../App.scss";
 
 .about-me {
-  max-width: 1000px;
-  margin: 0 auto;
-  text-align: center;
-  .section__subtitle--about {
-    margin-bottom: 1em;
-    padding: 0.25em 1em;
-    background: $clr-accent;
-    font-family: $ff-secondary;
+  // background-color: lighten($clr-dark, 70%);
 
-    .about-location {
-      display: block;
-    }
-  }
-
-  .about-me__img {
-    width: 300px;
+  .container {
+    max-width: 1000px;
     margin: 0 auto;
-    @include box-shadow;
+    text-align: center;
+    .section__subtitle--about {
+      margin-bottom: 1em;
+      padding: 0.25em 1em;
+      background: $clr-accent;
+      font-family: $ff-secondary;
+
+      .about-location {
+        display: block;
+      }
+    }
+
+    .about-me__img {
+      width: 300px;
+      margin: 0 auto;
+      @include box-shadow;
+    }
   }
 }
 
 @include screenSizeQuery("sm") {
   .about-me {
-    text-align: left;
-    display: grid;
-    grid-template-columns: 1fr 250px;
-    grid-template-areas:
-      "title img"
-      "subtitle img"
-      "text img";
-    grid-column-gap: 2em;
+    .container {
+      text-align: left;
+      display: grid;
+      grid-template-columns: 1fr 250px;
+      grid-template-areas:
+        "title img"
+        "subtitle img"
+        "text img";
+      grid-column-gap: 2em;
 
-    .section__title--about {
-      grid-area: title;
-    }
-    .section__subtitle--about {
-      grid-column: 1/-1;
-      grid-row: 2;
-      position: relative;
-      left: -1em;
-      width: calc(100% + 2em);
-      padding-left: 1em;
-      padding-right: calc(200px + 4em);
-
-      .about-location {
-        display: inline-block;
+      .section__title--about {
+        grid-area: title;
       }
-    }
-    .about-me__img {
-      width: 100%;
-      grid-area: img;
-      position: relative;
-      z-index: 2;
+      .section__subtitle--about {
+        grid-column: 1/-1;
+        grid-row: 2;
+        position: relative;
+        left: -1em;
+        width: calc(100% + 2em);
+        padding-left: 1em;
+        padding-right: calc(200px + 4em);
+
+        .about-location {
+          display: inline-block;
+        }
+      }
+      .about-me__img {
+        width: 100%;
+        grid-area: img;
+        position: relative;
+        z-index: 2;
+      }
     }
   }
 }
 
 @include screenSizeQuery("md") {
   .about-me {
-    grid-template-columns: 1fr 300px;
+    .container {
+      grid-template-columns: 1fr 300px;
+    }
   }
 }

@@ -1,7 +1,16 @@
 @import "../../App.scss";
 
 .contact {
+  background-color: $clr-dark;
   text-align: center;
+
+  .section__title--contact {
+    color: $clr-light;
+  }
+
+  .section__subtitle--contact {
+    color: $clr-accent;
+  }
 
   .contact__img {
     width: 100%;

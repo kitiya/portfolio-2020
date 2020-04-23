@@ -17,7 +17,7 @@ const Introduction = () => {
       <Fade>
         <img
           className="section__image--intro"
-          src={`${process.env.PUBLIC_URL}/assets/img/profile03.jpg`}
+          src={`${process.env.PUBLIC_URL}/assets/img/kitiya_s.png`}
           alt="profile"
         />
       </Fade>
