@@ -1,21 +1,18 @@
 @import "../../App.scss";
 
 .about-me {
-  // background-color: lighten($clr-dark, 70%);
-
   .container {
     max-width: 1000px;
     margin: 0 auto;
     text-align: center;
+
     .section__subtitle--about {
       margin-bottom: 1em;
       padding: 0.25em 1em;
       background: $clr-accent;
       font-family: $ff-secondary;
-
-      .about-location {
-        display: block;
-      }
+      display: flex;
+      align-items: center;
     }
 
     .about-me__img {
@@ -49,10 +46,6 @@
         width: calc(100% + 2em);
         padding-left: 1em;
         padding-right: calc(200px + 4em);
-
-        .about-location {
-          display: inline-block;
-        }
       }
       .about-me__img {
         width: 100%;
@@ -68,6 +61,10 @@
   .about-me {
     .container {
       grid-template-columns: 1fr 300px;
+
+      .section__subtitle--about {
+        line-height: 1;
+      }
     }
   }
 }
