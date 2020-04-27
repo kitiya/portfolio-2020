@@ -17,10 +17,12 @@ const MyWork = () => {
           return (
             <MyWorkItem
               key={index}
-              title={item.title}
-              techStack={item.techStack}
-              description={item.description}
               imageUrl={item.imageUrl}
+              title={item.title}
+              description={item.description}
+              demoUrl={item.demoUrl}
+              githubUrl={item.githubUrl}
+              techStack={item.techStack}
             />
           );
         })}

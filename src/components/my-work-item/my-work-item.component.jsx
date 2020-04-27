@@ -2,7 +2,15 @@ import React from "react";
 import Fade from "react-reveal";
 import "./my-work-item.styles.scss";
 
-const MyWorkItem = ({ title, techStack, description, imageUrl }) => {
+const MyWorkItem = ({
+  title,
+  imageUrl,
+  description,
+  demoUrl,
+  githubUrl,
+  techStack,
+}) => {
+  console.log(demoUrl);
   const urlPath = `${process.env.PUBLIC_URL}/assets/img/portfolio/${imageUrl}`;
   const iconUrl = `${process.env.PUBLIC_URL}/assets/icons/brands-50px/`;
   return (
@@ -15,10 +23,23 @@ const MyWorkItem = ({ title, techStack, description, imageUrl }) => {
           <div className="work-item__text-content">
             <p className="work-item__description">{description}</p>
             <div className="work-item__actions">
-              <a className="btn btn__mywork" href="/#">
-                Live Project
-              </a>
-              <a className="btn  btn__mywork" href="/#">
+              {demoUrl ? (
+                <a
+                  className="btn btn__mywork"
+                  href={demoUrl}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Live Project
+                </a>
+              ) : null}
+
+              <a
+                className="btn  btn__mywork"
+                href={githubUrl}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
                 Source Code
               </a>
             </div>

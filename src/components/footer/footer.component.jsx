@@ -5,7 +5,13 @@ import "./footer.styles.scss";
 const SocialListItem = ({ mediaName, fontAwesome, mediaLink }) => {
   return (
     <li className="social-list__item">
-      <a className="social-list__link" href={mediaLink}>
+      <a
+        className="social-list__link"
+        href={mediaLink}
+        title={mediaName}
+        rel="noopener noreferrer"
+        target="_blank"
+      >
         <i className={fontAwesome}></i>
       </a>
     </li>
@@ -15,9 +21,6 @@ const SocialListItem = ({ mediaName, fontAwesome, mediaLink }) => {
 const Footer = () => {
   return (
     <footer className="footer">
-      {/* <a href="mailto:warasint@gmail.com" className="footer__link">
-        warasint@gmail.com
-      </a> */}
       <ul className="social-list">
         {socialMediaListDB.map((item, index) => (
           <SocialListItem

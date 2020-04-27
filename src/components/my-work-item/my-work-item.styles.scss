@@ -3,7 +3,6 @@
 .work-item {
   padding: 3em;
   box-shadow: 0px 3px 3px -3px lighten($clr-dark, 50%);
-  @include font-size($fs-h6);
 
   &:last-child {
     margin-bottom: 2rem;

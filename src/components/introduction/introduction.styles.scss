@@ -2,6 +2,7 @@
 
 .intro {
   position: relative;
+  text-align: center;
 
   .section__title--intro {
     font-weight: $fw-reg;
@@ -20,11 +21,14 @@
 
   .section__image--intro {
     @include box-shadow;
+    width: 280px;
+    margin: 0 auto;
   }
 }
 
 @include screenSizeQuery("sm") {
   .intro {
+    text-align: left;
     display: grid;
     width: min-content;
     margin: 0 auto;
