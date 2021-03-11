@@ -18,11 +18,11 @@ const About = () => {
           />
           <div className="about-me__body">
             <p>
-              I am a front-end developer looking for a new role in an exciting
+              I am a full stack developer looking for a new role in an exciting
               company. I focus on writing accesible HTML, using modern CSS
-              practices and writing clean JavaScript. When writing JavaScript
-              code, I mostly use React, but I can adapt to whatever tools are
-              required.
+              practices, and writing clean JavaScript and TypeScript. When
+              writing front-end code, I mostly use React.js and React Native,
+              but I can adapt to whatever tools are required.
             </p>
             <p>
               I am based in Toronto, Canada, but I am happy working remotely and

@@ -1,17 +1,17 @@
 export const myServiceDB = [
   {
-    title: "Web Design",
+    title: "Web development",
     description:
-      "Cake tiramisu cotton candy ice cream bear claw pudding toffee cotton candy. Cookie brownie brownie tart chocolate danish chocolate gummies cookie. Liquorice soufflé ice cream lemon drops toffee lemon drops.",
+      "Experienced in builing full stack web applications using Node.js, Java Spring Boot, React.js,ProgreSQL, MySQL, Bootstrap, Sass, etc.",
   },
   {
-    title: "E-commerce",
+    title: "Mobile Application",
     description:
-      "Chocolate bar powder tootsie roll cheesecake bear claw jujubes. Pastry oat cake gingerbread tiramisu marshmallow liquorice tart pie. Cake chupa chups jelly beans soufflé pudding. Icing danish dessert jujubes.",
+      "Developed a hybrid real estate mobile application for both iOS and Android using React Native and Amazon Web Services (AWS) technology.",
   },
   {
-    title: "Machine Learning",
+    title: "Online Dashboard",
     description:
-      "Sugar plum muffin oat cake gummies liquorice candy pudding cake. Bear claw muffin cookie. Candy canes sugar plum soufflé halvah icing dragée pastry pastry. Tiramisu muffin pastry macaroon pudding marzipan.",
+      "Built and maintained online reporting dashboards to visualize the Key Performance Indicators and other strategic data for a market research firm.",
   },
 ];
